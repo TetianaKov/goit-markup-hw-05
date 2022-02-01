@@ -688,7 +688,7 @@ h1, фон #ffffff;
         justify-content: center;
         align-items: center;
 
-        transition: background var(--time-duration) var(--timing-function);
+        transition: background-color var(--time-duration) var(--timing-function);
     }
     .join-item:not(:first-child) {
         margin-left: 10px;
