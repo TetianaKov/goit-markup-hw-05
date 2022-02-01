@@ -153,7 +153,7 @@ h1, фон #ffffff;
         border-radius: 2px;
     
         transform: scaleX(0);
-        transition: transform var(--time-duration) var(--timing-function);
+        transition: transform var(--time-duration) var(--timing-function),  color var(--time-duration) var(--timing-function); 
     }
 
     .nav-link:hover,
