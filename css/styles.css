@@ -703,42 +703,6 @@ h1, фон #ffffff;
         position: relative;
         overflow: hidden;
     } 
-
-    .project-thumb::before {
-        display: inline-block;
-        content: '';
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 20px 24px;
-        width: 100%;
-        height: 100%;
-        background-color: var(--accent-color);
-        
-        opacity: 0; 
-
-        transform: translateY(100%);
-        transition: transform var(--time-duration) var(--timing-function), opacity var(--time-duration) var(--timing-function);
-    }
-
-    .project-thumb:hover::before,
-    .project-thumb:focus::before {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    .project-link:hover .project-thumb::before,
-    .project-link:focus .project-thumb::before {
-       transform: translateY(0);
-       opacity: 1;
-    }
-
-    .project-link:hover .project-action,
-    .project-link:focus .project-action {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
     .project-action {
         position: absolute;
         top: 0;
@@ -758,11 +722,19 @@ h1, фон #ffffff;
         line-height: 1.555;
         
 
-        opacity: 0;
+
 
         transform: translateY(100%);
         transition: transform var(--time-duration) var(--timing-function);
     }
+
+    .project-item:hover .project-action,
+    .project-item:focus .project-action {
+        transform: translateY(0);
+
+    }
+
+     
 
      /* Modal window */
      .backdrop {
